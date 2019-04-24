@@ -88,7 +88,7 @@ In addition to the required xSDK policies listed above, the following capabiliti
 
 **R1.** [Have a public repository](./R1.md).
 
-**R2.** Possible to run test suite under valgrind in order to test for memory corruption issues.
+**R2.** [Possible to run test suite under valgrind in order to test for memory corruption issues.](./R2.md)
 
 **R3.** Adopt and document consistent system for error conditions/exceptions.
 
