@@ -9,7 +9,7 @@ Version 0.4.0, July 27, 2018
 
 [https://xsdk.info/policies](https://xsdk.info/policies)
 
-![the xSDK logo](./res/xsdk-logo.png)
+<img src="./res/xsdk-logo.png" width="128">
 
 ## Background
 
