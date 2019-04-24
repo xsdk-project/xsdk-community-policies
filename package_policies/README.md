@@ -50,57 +50,57 @@ the xSDK may expand to incorporate additional packages, depending on community n
 
 ## xSDK Mandatory Policies
 
-**M1.** [Support xSDK community GNU Autoconf or CMake options.](./M1.md)
+**M1.** [Support xSDK community GNU Autoconf or CMake options.](/package_policies/M1.md)
 
-**M2.** [Provide a comprehensive test suite for correctness of installation verification.](./M2.md)
+**M2.** [Provide a comprehensive test suite for correctness of installation verification.](/package_policies/M2.md)
 
 **M3.** [Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 2 or MPI 3
 implementation without checking. Provide an option to prevent any changes to MPI error-handling if it is
-changed by default.](./M3.md)
+changed by default.](/package_policies/M3.md)
 
 **M4.** [Give best effort at portability to key architectures (standard Linux distributions, GNU, Clang,
-vendor compilers, and target machines at ALCF, NERSC, OLCF).](./M4.md)
+vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/M4.md)
 
-**M5.** [Provide a documented, reliable way to contact the development team.](./M5.md)
+**M5.** [Provide a documented, reliable way to contact the development team.](/package_policies/M5.md)
 
-**M6.** [Respect system resources and settings made by other previously called packages (e.g. signal handling).](./M6.md)
+**M6.** [Respect system resources and settings made by other previously called packages (e.g. signal handling).](/package_policies/M6.md)
 
-**M7.** [Come with an open source (BSD style) license.](./M7.md)
+**M7.** [Come with an open source (BSD style) license.](/package_policies/M7.md)
 
-**M8.** [Provide a runtime API to return the current version number of the software.](./M8.md)
+**M8.** [Provide a runtime API to return the current version number of the software.](/package_policies/M8.md)
 
-**M9.** [Use a limited and well-defined symbol, macro, library, and include file name space.](./M9.md)
+**M9.** [Use a limited and well-defined symbol, macro, library, and include file name space.](/package_policies/M9.md)
 
-**M10.** [Provide an xSDK team accessible repository (not necessarily publicly available).](./M10.md)
+**M10.** [Provide an xSDK team accessible repository (not necessarily publicly available).](/package_policies/M10.md)
 
-**M11.** [Have no hardwired print or IO statements that cannot be turned off.](./M11.md)
+**M11.** [Have no hardwired print or IO statements that cannot be turned off.](/package_policies/M11.md)
 
-**M12.** [For external dependencies, allow installing, building, and linking against an outside copy of external software.](./M12.md)
+**M12.** [For external dependencies, allow installing, building, and linking against an outside copy of external software.](/package_policies/M12.md)
 
-**M13.** [Install headers and libraries under <prefix>/include and <prefix>/lib.](./M13.md)
+**M13.** [Install headers and libraries under <prefix>/include and <prefix>/lib.](/package_policies/M13.md)
   
-**M14.** [Be buildable using 64 bit pointers. 32 bit is optional.](./M14.md)
+**M14.** [Be buildable using 64 bit pointers. 32 bit is optional.](/package_policies/M14.md)
 
-**M15.** [All xSDK compatibility changes should be sustainable.](./M15.md)
+**M15.** [All xSDK compatibility changes should be sustainable.](/package_policies/M15.md)
 
 **M16.** [The package must support production-quality installation compatible with the xSDK install tool
-and xSDK metapackage.](./M16.md)
+and xSDK metapackage.](/package_policies/M16.md)
 
 ## xSDK Recommended Policies
 
 In addition to the required xSDK policies listed above, the following capabilities are also recommended.
 
-**R1.** [Have a public repository](./R1.md).
+**R1.** [Have a public repository](/package_policies/R1.md).
 
-**R2.** [Possible to run test suite under valgrind in order to test for memory corruption issues.](./R2.md)
+**R2.** [Possible to run test suite under valgrind in order to test for memory corruption issues.](/package_policies/R2.md)
 
-**R3.** [Adopt and document consistent system for error conditions/exceptions.](./R3.md)
+**R3.** [Adopt and document consistent system for error conditions/exceptions.](/package_policies/R3.md)
 
-**R4.** [Free all system resources acquired as soon as they are no longer needed.](./R4.md)
+**R4.** [Free all system resources acquired as soon as they are no longer needed.](/package_policies/R4.md)
 
-**R5.** [Provide a mechanism to export ordered list of library dependencies.](./R5.md)
+**R5.** [Provide a mechanism to export ordered list of library dependencies.](/package_policies/R5.md)
 
-**R6.** [Document versions of packages that it works with or depends upon, preferably in machine-readable form.](./R6.md)
+**R6.** [Document versions of packages that it works with or depends upon, preferably in machine-readable form.](/package_policies/R6.md)
 
 ## History of the xSDK Community Policies
 
