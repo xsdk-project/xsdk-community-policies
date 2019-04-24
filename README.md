@@ -44,6 +44,44 @@ formalize them. Currently the xSDK includes seven popular numerical libraries ([
 packages ([Alquimia][10] and [PFLOTRAN][11]), which satisfy the required policies. Over the longer term,
 the xSDK may expand to incorporate additional packages, depending on community needs and contributions.
 
+## xSDK Mandatory Policies
+
+**M1.** [Support xSDK community GNU Autoconf or CMake options.](./M1.md)
+
+**M2.** Provide a comprehensive test suite for correctness of installation verification.
+
+**M3.** Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 2 or MPI 3
+implementation without checking. Provide an option to prevent any changes to MPI error-handling if it is
+changed by default.
+
+**M4.** Give best effort at portability to key architectures (standard Linux distributions, GNU, Clang,
+vendor compilers, and target machines at ALCF, NERSC, OLCF).
+
+**M5.** Provide a documented, reliable way to contact the development team.
+
+**M6.** Respect system resources and settings made by other previously called packages (e.g. signal handling).
+
+**M7.** Come with an open source (BSD style) license.
+
+**M8.** Provide a runtime API to return the current version number of the software.
+
+**M9.** Use a limited and well-defined symbol, macro, library, and include file name space.
+
+**M10.** Provide an xSDK team accessible repository (not necessarily publicly available).
+
+**M11.** Have no hardwired print or IO statements that cannot be turned off.
+
+**M12.** For external dependencies, allow installing, building, and linking against an outside copy of external software.
+
+**M13.** Install headers and libraries under <prefix>/include and <prefix>/lib.
+  
+**M14.** Be buildable using 64 bit pointers. 32 bit is optional.
+
+**M15.** All xSDK compatibility changes should be sustainable.
+
+**M16.** The package must support production-quality installation compatible with the xSDK install tool
+and xSDK metapackage.
+
 -----
 
 <sup>1</sup> For the purpose of this document, the term *package* refers to a collection of source code
