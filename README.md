@@ -34,7 +34,7 @@ packages. We also consider two levels of xSDK compatibility: **mandatory policie
 policies, we specify **recommended xSDK policies** that further help to address issues in
 software interoperability.
 
-+ Similarly, a package can become an **xSDK member package(( if (1) it is an xSDK-compatible
++ Similarly, a package can become an **xSDK member package** if (1) it is an xSDK-compatible
 package, *and* (2) it uses or can be used by another package in the xSDK, and the connecting
 interface is regularly tested for regressions.
 
