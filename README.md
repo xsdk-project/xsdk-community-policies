@@ -50,37 +50,37 @@ the xSDK may expand to incorporate additional packages, depending on community n
 
 **M2.** [Provide a comprehensive test suite for correctness of installation verification.](./M2.md)
 
-**M3.** Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 2 or MPI 3
+**M3.** [Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 2 or MPI 3
 implementation without checking. Provide an option to prevent any changes to MPI error-handling if it is
-changed by default.
+changed by default.](./M3.md)
 
-**M4.** Give best effort at portability to key architectures (standard Linux distributions, GNU, Clang,
-vendor compilers, and target machines at ALCF, NERSC, OLCF).
+**M4.** [Give best effort at portability to key architectures (standard Linux distributions, GNU, Clang,
+vendor compilers, and target machines at ALCF, NERSC, OLCF).](./M4.md)
 
-**M5.** Provide a documented, reliable way to contact the development team.
+**M5.** [Provide a documented, reliable way to contact the development team.](./M5.md)
 
-**M6.** Respect system resources and settings made by other previously called packages (e.g. signal handling).
+**M6.** [Respect system resources and settings made by other previously called packages (e.g. signal handling).](./M6.md)
 
-**M7.** Come with an open source (BSD style) license.
+**M7.** [Come with an open source (BSD style) license.](./M7.md)
 
-**M8.** Provide a runtime API to return the current version number of the software.
+**M8.** [Provide a runtime API to return the current version number of the software.](./M8.md)
 
-**M9.** Use a limited and well-defined symbol, macro, library, and include file name space.
+**M9.** [Use a limited and well-defined symbol, macro, library, and include file name space.](./M9.md)
 
-**M10.** Provide an xSDK team accessible repository (not necessarily publicly available).
+**M10.** [Provide an xSDK team accessible repository (not necessarily publicly available).](./M10.md)
 
-**M11.** Have no hardwired print or IO statements that cannot be turned off.
+**M11.** [Have no hardwired print or IO statements that cannot be turned off.](./M11.md)
 
-**M12.** For external dependencies, allow installing, building, and linking against an outside copy of external software.
+**M12.** [For external dependencies, allow installing, building, and linking against an outside copy of external software.](./M12.md)
 
-**M13.** Install headers and libraries under <prefix>/include and <prefix>/lib.
+**M13.** [Install headers and libraries under <prefix>/include and <prefix>/lib.](./M13.md)
   
-**M14.** Be buildable using 64 bit pointers. 32 bit is optional.
+**M14.** [Be buildable using 64 bit pointers. 32 bit is optional.](./M14.md)
 
-**M15.** All xSDK compatibility changes should be sustainable.
+**M15.** [All xSDK compatibility changes should be sustainable.](./M15.md)
 
-**M16.** The package must support production-quality installation compatible with the xSDK install tool
-and xSDK metapackage.
+**M16.** [The package must support production-quality installation compatible with the xSDK install tool
+and xSDK metapackage.](./M16.md)
 
 ## xSDK Recommended Policies
 
@@ -90,13 +90,13 @@ In addition to the required xSDK policies listed above, the following capabiliti
 
 **R2.** [Possible to run test suite under valgrind in order to test for memory corruption issues.](./R2.md)
 
-**R3.** Adopt and document consistent system for error conditions/exceptions.
+**R3.** [Adopt and document consistent system for error conditions/exceptions.](./R3.md)
 
-**R4.** Free all system resources acquired as soon as they are no longer needed.
+**R4.** [Free all system resources acquired as soon as they are no longer needed.](./R4.md)
 
-**R5.** Provide a mechanism to export ordered list of library dependencies.
+**R5.** [Provide a mechanism to export ordered list of library dependencies.](./R5.md)
 
-**R6.** Document versions of packages that it works with or depends upon, preferably in machine-readable form.
+**R6.** [Document versions of packages that it works with or depends upon, preferably in machine-readable form.](./R6.md)
 
 -----
 
