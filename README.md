@@ -48,7 +48,7 @@ the xSDK may expand to incorporate additional packages, depending on community n
 
 **M1.** [Support xSDK community GNU Autoconf or CMake options.](./M1.md)
 
-**M2.** Provide a comprehensive test suite for correctness of installation verification.
+**M2.** [Provide a comprehensive test suite for correctness of installation verification.](./M2.md)
 
 **M3.** Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 2 or MPI 3
 implementation without checking. Provide an option to prevent any changes to MPI error-handling if it is
