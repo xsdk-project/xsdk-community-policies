@@ -43,8 +43,8 @@ package, *and* (2) it uses or can be used by another package in the xSDK, and th
 interface is regularly tested for regressions.
 
 Initially the requirements and process are informally presented; over time, if needed, we can begin to
-formalize them. Currently the xSDK includes seven popular numerical libraries ([hypre][3] , [MAGMA][4] ,
-[MFEM][5] , [PETSc/TAO][6] , [SUNDIALS][7] , [SuperLU][8] , and [Trilinos][9]) and two application
+formalize them. Currently the xSDK includes seven popular numerical libraries ([hypre][3], [MAGMA][4],
+[MFEM][5], [PETSc/TAO][6], [SUNDIALS][7], [SuperLU][8], and [Trilinos][9]) and two application
 packages ([Alquimia][10] and [PFLOTRAN][11]), which satisfy the required policies. Over the longer term,
 the xSDK may expand to incorporate additional packages, depending on community needs and contributions.
 
