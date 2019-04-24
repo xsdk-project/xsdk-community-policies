@@ -9,6 +9,8 @@ Version 0.4.0, July 27, 2018
 
 [https://xsdk.info/policies](https://xsdk.info/policies)
 
+![the xSDK logo](./res/xsdk-logo.png)
+
 ## Background
 
 A key aspect of work in the [IDEAS Scientific Software Productivity Project][1] is developing an Extreme-scale
