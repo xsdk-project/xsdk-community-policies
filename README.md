@@ -82,6 +82,22 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).
 **M16.** The package must support production-quality installation compatible with the xSDK install tool
 and xSDK metapackage.
 
+## xSDK Recommended Policies
+
+In addition to the required xSDK policies listed above, the following capabilities are also recommended.
+
+**R1.** [Have a public repository](./R1.md).
+
+**R2.** Possible to run test suite under valgrind in order to test for memory corruption issues.
+
+**R3.** Adopt and document consistent system for error conditions/exceptions.
+
+**R4.** Free all system resources acquired as soon as they are no longer needed.
+
+**R5.** Provide a mechanism to export ordered list of library dependencies.
+
+**R6.** Document versions of packages that it works with or depends upon, preferably in machine-readable form.
+
 -----
 
 <sup>1</sup> For the purpose of this document, the term *package* refers to a collection of source code
