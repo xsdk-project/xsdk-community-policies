@@ -11,3 +11,87 @@ The IDEAS Project xSDK Team
 Version 0.3.0, November 6, 2017
 
 [https://xsdk.info/policies](https://xsdk.info/policies)
+
+## Background
+
+[What is software configuration?][1] and [How to configure software][2]
+
+## Motivation
+
+Combinations of multiple software packages developed by different groups have become essential for large-scale computational
+science, where the capabilities needed for modeling, simulation, and analysis are broader than any single team has resources
+to address. The often-tedious trial-and-error process of obtaining, configuring, and installing any single tool may arguably
+be manageable.  From the perspective of an end-user application scientist, however, handling each tool’s installation 
+idiosyncrasies can easily become overwhelming when dealing with several packages in combination. Worse, such problems are 
+compounded by the need for consistency among packages to be used within the same application in terms of compiler, compiler 
+version, exotic compiler optimization options, and common third-party packages such as BLAS and HDF5.
+
+## Goal
+
+A key aspect of work in the [IDEAS software productivity project][3] is developing an 
+Extreme-scale Scientific Software Development Kit ([xSDK](http://xsdk.info)). As an initial step in this work, our goal is 
+to define and implement a standard subset (NOTE: Packages are free to support their own additional options, but using the 
+standard options should be all that is needed to get correct builds.) of configure and CMake (NOTE: A subset of these 
+standard behaviors is implemented in the XSDKDefaults.cmake module and is demonstrated and tested in the CMake project 
+https://github.com/bartlettroscoe/XSDKCMakeProj.) options for xSDK and other HPC packages in order to make the configuration 
+and installation process as efficient as possible on standard Linux distributions and Mac OS, as well as on target machines 
+at DOE computing facilities (ALCF, NERSC, OLCF). Note that we are not requiring that all packages use the same installation 
+software, merely that they follow the same standard procedure with the same option names for installation. This approach 
+provides maximum flexibility for each package to select the most suitable toolchain to use for its package.
+
+## Impact
+
+Development of a standard xSDK package installation interface is a foundational step toward the seamless combined use of 
+multiple xSDK libraries. The impact of this work is that all xSDK packages will have standard configuration and build 
+instructions, as well as a tester to ensure that all functionality works properly. In addition, because new packages in the 
+xSDK will follow the same standard, it is possible to make the installations "scriptable," that is, to write tools to install 
+many packages automatically.  This work is part of the [xSDK Community Package Policies][4].
+
+## xSDK Standard Configure and CMake Options
+
+NOTE: This standard is related only to arguments to CMake and GNU Autoconf; there is no requirement regarding the make
+system used (for example, that it be GNU make) nor that the make system accepts any particular arguments, such as make
+LIBS+=-lz.
+
+1. [Implement the xSDK defaults option.](/installation_policies/1.md)
+
+2. [Identify location to install package.](/installation_policies/2.md)
+
+3. [Select compilers and compiler flags.](/installation_policies/3.md)
+
+4. [Create libraries with debugging information and possible additional error checking.](/installation_policies/4.md)
+
+5. [Select option used for indicating whether to build shared libraries.](/installation_policies/5.md)
+
+6. [Build interface for a particular additional language.](/installation_policies/6.md)
+
+7. [Determine precision for packages that build only for one precision. Packages that handle all precisions automatically are free to ignore this option.](/installation_policies/7.md)
+
+8. [Determine index size for packages that build only for one index size. Packages that handle all precisions automatically are free to ignore this option.](/installation_policies/8.md)
+
+9. [Set location of BLAS and LAPACK libraries.](/installation_policies/9.md)
+
+10. [Determine other package libraries and include directories.](/installation_policies/10.md)
+
+11. [In the XSDK mode, XSDK projects should not rely on users providing any library path information in environmental variables.](/installation_policies/11.md)
+
+12. [Provide commands for compiling, installing, and "smoke" testing.](/installation_policies/12.md)
+
+13. [Package should provide a machine-readable output to show provenance.](/installation_policies/13.md)
+
+
+## Auhtors
+
+This document was prepared by Roscoe Bartlett, Jason Sarich, and Barry Smith, with key input from Todd Gamblin.  We thank 
+xSDK software developers and the IDEAS team for insightful discussion about issues and approaches.
+
+## Acknowledgement
+
+This material is based upon work supported by the U.S. Department of Energy Office of Science, Advanced Scientific Computing 
+Research and Biological and Environmental Research programs.
+
+
+[1]: https://ideas-productivity.org/wordpress/wp-content/uploads/2016/04/IDEAS-ConfigurationWhatIsSoftwareConfiguration-V0.2.pdf
+[2]: https://ideas-productivity.org/wordpress/wp-content/uploads/2016/12/IDEAS-ConfigurationHowToConfigureSoftware-V0.2.pdf
+[3]: http://www.ideas-productivity.org
+[4]: http://dx.doi.org/10.6084/m9.figshare.4495136
