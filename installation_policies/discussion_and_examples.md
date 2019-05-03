@@ -49,7 +49,7 @@ For configure we are trying to match as closely as possible the GNU autoconf and
 
 10.  `./configure --with-x --with-metis-lib=/usr/local/lib/libmetis.a --with-metis-include=-I/usr/local/include`
 
-     * In CMake, the analogous approach would be `cmake -DTPL_ENABLE_METIS=ON -DTPL_METIS_INCLUDE_DIRS=-I/usr/local/include -DTPL_METIS_LIBRARIES=/usr/local/lib/libmetis.a`. However, a package may use CMake's `find_package()` command to load a dependent library as long as the package provides a way for a user to specify an installation of the dependent library to use, *and* the package guaruantees that the specified installation is not substituted.
+     * In CMake, the analogous approach would be `cmake -DTPL_ENABLE_METIS=ON -DTPL_METIS_INCLUDE_DIRS=-I/usr/local/include -DTPL_METIS_LIBRARIES=/usr/local/lib/libmetis.a`. However, a package may use CMake's `find_package()` command to load a dependent library as long as the package provides a way for a user to specify an installation of the dependent library to use, *and* the package guarantees that the specified installation is not substituted.
     
      * Packages are free to locate a package on the file system if none is specifically provided by the user. If the user does provide one, however, it **must** be used; if it is not able to be used, then an error must be generated. A package 
 cannot silently substitute a different installation.
