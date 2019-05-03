@@ -74,7 +74,7 @@ many packages automatically.  This work is part of the [xSDK Community Package P
 13. [Package should provide a machine-readable output to show provenance.](/installation_policies/13.md)
 
 
-For further discussion and examples of the xSDK standard Configure and CMake options see [discussions_and_examples.md](/installation_policies/dicussion_and_examples.md).
+For further discussion and examples of the xSDK standard Configure and CMake options see [discussions_and_examples.md](/installation_policies/discussion_and_examples.md).
 
 ## Authors
 
