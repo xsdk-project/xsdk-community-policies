@@ -14,7 +14,7 @@ Version 0.3.0, November 6, 2017
 
 ## Background
 
-[What is software configuration?][1] and [How to configure software][2]
+[What is software configuration?][1] and [How to configure software][2].
 
 ## Motivation
 
@@ -30,14 +30,12 @@ version, exotic compiler optimization options, and common third-party packages s
 
 A key aspect of work in the [IDEAS software productivity project][3] is developing an 
 Extreme-scale Scientific Software Development Kit ([xSDK](http://xsdk.info)). As an initial step in this work, our goal is 
-to define and implement a standard subset (NOTE: Packages are free to support their own additional options, but using the 
-standard options should be all that is needed to get correct builds.) of configure and CMake (NOTE: A subset of these 
-standard behaviors is implemented in the XSDKDefaults.cmake module and is demonstrated and tested in the CMake project 
-https://github.com/bartlettroscoe/XSDKCMakeProj.) options for xSDK and other HPC packages in order to make the configuration 
-and installation process as efficient as possible on standard Linux distributions and Mac OS, as well as on target machines 
-at DOE computing facilities (ALCF, NERSC, OLCF). Note that we are not requiring that all packages use the same installation 
-software, merely that they follow the same standard procedure with the same option names for installation. This approach 
-provides maximum flexibility for each package to select the most suitable toolchain to use for its package.
+to define and implement a standard subset<sup>1</sup> of configure and CMake<sup>2</sup> options for xSDK and 
+other HPC packages in order to make the configuration  and installation process as efficient as possible on standard Linux
+distributions and Mac OS, as well as on target machines at DOE computing facilities (ALCF, NERSC, OLCF). Note that we are
+not requiring that all packages use the same installation software, merely that they follow the same standard procedure
+with the same option names for installation. This approach provides maximum flexibility for each package to select the
+most suitable toolchain to use for its package.
 
 ## Impact
 
@@ -80,7 +78,7 @@ LIBS+=-lz.
 13. [Package should provide a machine-readable output to show provenance.](/installation_policies/13.md)
 
 
-## Auhtors
+## Authors
 
 This document was prepared by Roscoe Bartlett, Jason Sarich, and Barry Smith, with key input from Todd Gamblin.  We thank 
 xSDK software developers and the IDEAS team for insightful discussion about issues and approaches.
@@ -89,6 +87,14 @@ xSDK software developers and the IDEAS team for insightful discussion about issu
 
 This material is based upon work supported by the U.S. Department of Energy Office of Science, Advanced Scientific Computing 
 Research and Biological and Environmental Research programs.
+
+
+-----
+
+<sup>1</sup> Packages are free to support their own additional options, but using the standard options should be all that
+is needed to get correct builds.
+
+<sup>2</sup> A subset of these standard behaviors is implemented in the XSDKDefaults.cmake module and is demonstrated and tested in the CMake project https://github.com/bartlettroscoe/XSDKCMakeProj.
 
 
 [1]: https://ideas-productivity.org/wordpress/wp-content/uploads/2016/04/IDEAS-ConfigurationWhatIsSoftwareConfiguration-V0.2.pdf
