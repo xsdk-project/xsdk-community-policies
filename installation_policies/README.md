@@ -45,11 +45,7 @@ instructions, as well as a tester to ensure that all functionality works properl
 xSDK will follow the same standard, it is possible to make the installations "scriptable," that is, to write tools to install 
 many packages automatically.  This work is part of the [xSDK Community Package Policies][4].
 
-## xSDK Standard Configure and CMake Options
-
-NOTE: This standard is related only to arguments to CMake and GNU Autoconf; there is no requirement regarding the make
-system used (for example, that it be GNU make) nor that the make system accepts any particular arguments, such as make
-LIBS+=-lz.
+## xSDK Standard Configure and CMake Options<sup>3</sup> 
 
 1. [Implement the xSDK defaults option.](/installation_policies/1.md)
 
@@ -78,6 +74,8 @@ LIBS+=-lz.
 13. [Package should provide a machine-readable output to show provenance.](/installation_policies/13.md)
 
 
+For further discussion and examples of the xSDK standard Configure and CMake options see [discussions_and_examples.md](/installation_policies/dicussion_and_examples.md).
+
 ## Authors
 
 This document was prepared by Roscoe Bartlett, Jason Sarich, and Barry Smith, with key input from Todd Gamblin.  We thank 
@@ -88,13 +86,25 @@ xSDK software developers and the IDEAS team for insightful discussion about issu
 This material is based upon work supported by the U.S. Department of Energy Office of Science, Advanced Scientific Computing 
 Research and Biological and Environmental Research programs.
 
-
 -----
+
+
+
+[//]: # "Main body footnotes"
 
 <sup>1</sup> Packages are free to support their own additional options, but using the standard options should be all that
 is needed to get correct builds.
 
 <sup>2</sup> A subset of these standard behaviors is implemented in the XSDKDefaults.cmake module and is demonstrated and tested in the CMake project https://github.com/bartlettroscoe/XSDKCMakeProj.
+
+<sup>3</sup> This standard is related only to arguments to CMake and GNU Autoconf; there is no requirement regarding the make 
+system used (for example, that it be GNU make) nor that the make system accepts any particular arguments, such as `make 
+LIBS+=-lz`.
+
+
+
+
+[//]: # "Links go here"
 
 
 [1]: https://ideas-productivity.org/wordpress/wp-content/uploads/2016/04/IDEAS-ConfigurationWhatIsSoftwareConfiguration-V0.2.pdf
