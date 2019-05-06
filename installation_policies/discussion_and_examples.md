@@ -14,11 +14,11 @@ For configure we are trying to match as closely as possible the GNU autoconf and
 
     * With CMake projects, compiler flags are passed to the compiler as follows:
     `${CMAKE_<LANG>_COMPILER>  ${CMAKE_<LANG>_FLAGS} ${CMAKE_<LANG>_FLAGS_<CMAKE_BUILD_TYPE>}`
-     Therefore, CMAKE_<LANG>_FLAGS never overrides the build type (e.g., DEBUG, RELEASE) specific compiler flags.  
+     Therefore, `CMAKE_<LANG>_FLAGS` never overrides the build type (e.g., `DEBUG`, `RELEASE`) specific compiler flags.  
 
 4. `./configure --disable-debug; cmake -DCMAKE_BUILD_TYPE=RELEASE `
 
-    * Debug is the default because it helps users while developing (writing) their code, which is most of the time.
+    * `Debug` is the default because it helps users while developing (writing) their code, which is most of the time.
 
     * The optimized/release version may or may not contain debug symbols. Although the consensus is that including debug 
     symbols is a good idea for deeply templated C++ libraries, the object size can become very large. Therefore, we do not 
