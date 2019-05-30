@@ -47,21 +47,17 @@ For configure we are trying to match as closely as possible the GNU autoconf and
     If the user does provide one, however, it **must** be used; if it is not able to be used, then an error must be 
     generated. A package cannot silently substitute a different installation.
 
-10. `./configure --with-x --with-metis-lib=/usr/local/lib/libmetis.a --with-metis-include=-I/usr/local/include  ; cmake -DTPL_Metis_LIBRARIES=/usr/local/lib/libmetis.a -DTPL_Metis_INCLUDE_DIRS=/usr/local/include ...`
+10.  `./configure --with-x --with-metis-lib=/usr/local/lib/libmetis.a --with-metis-include=/usr/local/include`
 
-    * MPI is never considered a <package>, and xSDK packages do not need to support --with-mpi-lib and --with-mpi-include. In 
-    fact, we recommend against it. 
+     * In CMake, the analogous approach would be `cmake -DTPL_ENABLE_METIS=ON -DTPL_METIS_INCLUDE_DIRS=/usr/local/include -DTPL_METIS_LIBRARIES=/usr/local/lib/libmetis.a`. However, a package may use CMake's `find_package()` command to load a dependent library as long as the package provides a way for a user to specify an installation of the dependent library to use, *and* the package guarantees that the specified installation is not substituted.
+    
+     * Packages are free to locate a package on the file system if none is specifically provided by the user. If the user does provide one, however, it **must** be used; if it is not able to be used, then an error must be generated. A package 
+cannot silently substitute a different installation.
+    
+     * There does not exist any CMake standard allowing an external user to set what external package dependencies should be enabled or disabled when configuring. Therefore, this is a TriBITS/Trilinos standard is which calls external packages "TPL"s and therefore the name `TPL_ENABLE_<package>`.
 
-    * We also do not recommend support --with-<package>-dir=directory because that is difficult to implement robustly.
-
-    * Packages are free to locate a package on the file system if none is specifically provided by the user. If the user does 
-    provide one, however, it **must **be used; if it is not able to be used, then an error must be generated. A package 
-    cannot silently substitute a different installation.
-
-    * There does not exist any CMake standard allowing an external user to set what external package dependencies should be 
-    enabled or disabled when configuring.   Therefore, this is a TriBITS/Trilinos standard is which calls external packages 
-    "TPL"s and therefore the name “TPL_ENABLE_<package>”.
-
+     * MPI is never considered a `<package>`, and xSDK packages do not need to support `--with-mpi-lib` and `--with-mpi-include`. In fact, we recommend against it. 
+    
 11. In order for linking of applications with a multitude of libraries without users needing to set LD_LIBRARY_PATH, 
 each package likely needs to manage how it handles the rpath linker options when building its libraries.
 
