@@ -43,9 +43,32 @@ package, *and* (2) it uses or can be used by another package in the xSDK, and th
 interface is regularly tested for regressions.
 
 Initially the requirements and process are informally presented; over time, if needed, we can begin to
-formalize them. Currently the xSDK includes seven popular numerical libraries ([hypre][3], [MAGMA][4],
-[MFEM][5], [PETSc/TAO][6], [SUNDIALS][7], [SuperLU][8], and [Trilinos][9]) and two application
-packages ([Alquimia][10] and [PFLOTRAN][11]), which satisfy the required policies. Over the longer term,
+formalize them. Currently the xSDK includes seventeen popular numerical libraries:
+
+1. [AMReX][13]
+2. [DTK][14]
+3. [deal.II][15]
+4. [hypre][3]
+5. [MAGMA][4]
+6. [MFEM][5]
+7. [Omega_h][16]
+8. [PETSc/TAO][6]
+9. [PHIST][17]
+10. [PLASMA][18]
+11. [PUMI][19]
+12. [SLEPc][20]
+13. [STRUMPACK][21]
+14. [SUNDIALS][7]
+15. [SuperLU][8]
+16. [Tasmanian][22]
+17. [Trilinos][9]
+
+and two applications packages:
+
+1. [Alquimia][10]
+2. [PFLOTRAN][11],
+
+which satisfy the required policies. Over the longer term,
 the xSDK may expand to incorporate additional packages, depending on community needs and contributions.
 
 ## xSDK Mandatory Policies
@@ -162,3 +185,13 @@ http://trac.trilinos.org/wiki/TribitsLifecycleModelOverview#self_sustaining_soft
 [10]: https://bitbucket.org/berkeleylab/alquimia
 [11]: http://www.pflotran.org/
 [12]: http://xsdk.info/faq/
+[13]: https://amrex-codes.github.io/amrex/
+[14]: https://github.com/ORNL-CEES/DataTransferKit
+[15]: http://www.dealii.org/
+[16]: https://github.com/ibaned/omega_h
+[17]: https://bitbucket.org/essex/phist
+[18]: http://icl.utk.edu/plasma/
+[19]: https://github.com/SCOREC/core
+[20]: http://slepc.upv.es/
+[21]: https://portal.nersc.gov/project/sparse/strumpack/
+[22]: https://tasmanian.ornl.gov/
