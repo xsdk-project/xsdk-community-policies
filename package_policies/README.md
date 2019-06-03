@@ -17,7 +17,7 @@ Version 0.4.0, July 27, 2018
 A key aspect of work in the [IDEAS Scientific Software Productivity Project][1] is developing an Extreme-scale
 Scientific Software Development Kit ([xSDK][2]) — a collection of related and complementary software elements
 that provide the building blocks, tools, models, processes, and related artifacts for rapid and efficient
-development of high-quality applications. As an initial step in creating the xSDK, we have written the
+development of high-quality applications. As an initial step in creating xSDK, we have written the
 following draft xSDK package community policies to help address challenges in interoperability and
 sustainability of software developed by diverse groups at different institutions.
 
@@ -39,11 +39,11 @@ policies, we specify **recommended xSDK policies** that further help to address 
 software interoperability.
 
 + Similarly, a package can become an **xSDK member package** if (1) it is an xSDK-compatible
-package, *and* (2) it uses or can be used by another package in the xSDK, and the connecting
+package, *and* (2) it uses or can be used by another package in xSDK, and the connecting
 interface is regularly tested for regressions.
 
 Initially the requirements and process are informally presented; over time, if needed, we can begin to
-formalize them. Currently the xSDK includes seventeen popular numerical libraries:
+formalize them. Currently xSDK includes seventeen popular numerical libraries:
 
 1. [AMReX][13]
 2. [DTK][14]
@@ -69,7 +69,7 @@ and two applications packages:
 2. [PFLOTRAN][11],
 
 which satisfy the required policies. Over the longer term,
-the xSDK may expand to incorporate additional packages, depending on community needs and contributions.
+xSDK may expand to incorporate additional packages, depending on community needs and contributions.
 
 ## xSDK Mandatory Policies
 
@@ -147,7 +147,7 @@ minor edits
 + Changes in version 0.2, January 28, 2016: minor edit
 + Version 0.1, November 10, 2015: original version
 
-## Frequently Asked Questions about the xSDK
+## Frequently Asked Questions about xSDK
 
 See the [xSDK FAQ list][12].
 
