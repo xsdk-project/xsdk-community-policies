@@ -100,7 +100,7 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 **M12.** [For external dependencies, allow installing, building, and linking against an outside copy of external software.](/package_policies/M12.md)
 
-**M13.** [Install headers and libraries under <prefix>/include and <prefix>/lib.](/package_policies/M13.md)
+**M13.** [Install headers and libraries under `<prefix>/include` and `<prefix>/lib`.](/package_policies/M13.md)
   
 **M14.** [Be buildable using 64 bit pointers. 32 bit is optional.](/package_policies/M14.md)
 
