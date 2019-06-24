@@ -125,6 +125,8 @@ In addition to the required xSDK policies listed above, the following capabiliti
 
 **R6.** [Document versions of packages that it works with or depends upon, preferably in machine-readable form.](/package_policies/R6.md)
 
+**R8.** [Provide version comparision preprocessor macros.](/package_policies/R8.md)
+
 ## History of the xSDK Community Policies
 
 The original version of this document was prepared in 2015 by Barry Smith with key input from Roscoe Bartlett
