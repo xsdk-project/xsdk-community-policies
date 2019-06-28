@@ -6,9 +6,7 @@ We are actively soliciting suggestions from the community at https://xsdk.info/p
 
 # xSDK Community Installation Policies
 
-The IDEAS Project xSDK Team
-
-Version 0.3.0, November 6, 2017
+Version 0.5.0, June 27, 2019
 
 [https://xsdk.info/policies](https://xsdk.info/policies)
 
@@ -75,6 +73,9 @@ many packages automatically.  This work is part of the [xSDK Community Package P
 
 
 For further discussion and examples of the xSDK standard Configure and CMake options see [discussions_and_examples.md](/installation_policies/discussion_and_examples.md).
+
++ Changes in version 0.5.0, June 27, 2019:
+  + Changed installation policies 13 and 10 and examples in 10
 
 ## Authors
 
