@@ -8,7 +8,7 @@ We are actively soliciting suggestions from the community at https://xsdk.info/p
 
 The IDEAS Project xSDK Team
 
-Version 0.4.0, July 27, 2018
+Version 0.5.0, June 27, 2019
 
 [https://xsdk.info/policies](https://xsdk.info/policies)
 
@@ -134,6 +134,10 @@ with the broader computational science community and developers of an expanding 
 packages. We thank all xSDK package developers, the IDEAS team, and the scientific computing community for
 insightful discussion about issues and approaches.
 
++ Changes in version 0.5.0, June 27, 2019:
+  + Added new policy R7, which recommends the inclusion of various information files in the top directory
+  + Dropped the requirement to detect MPI 2 features in M3
+  + Made various editorial changes in M5, M13, M15, and R2 for clarification or to fix typos. 
 + Changes in version 0.4.0, July 27, 2018:
   + Split policy M4 into 2 parts: M4 (portability to common platforms) and new policy R6
 (package should document the versions of packages with which it can work on on which it depends). See
