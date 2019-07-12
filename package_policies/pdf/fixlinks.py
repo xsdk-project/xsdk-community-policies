@@ -1,6 +1,7 @@
 """
- Convert policy file links to section links in the PDF.
- Also fix image absolute link(s).
+ Pandoc filter that uses panflute.
+ Converts policy file links to section links in the PDF. Also fix image absolute link(s).
+ Author: Cody Balos (@balos1)
 """
 
 import panflute as pf
