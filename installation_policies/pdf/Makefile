@@ -7,4 +7,8 @@
 # Author: Cody Balos (@balos1)
 
 all:
-	pandoc -F fixlinks.py -fmarkdown-implicit_figures *.md -o xsdk-installation-policies.pdf
+	pandoc *.md \
+		-F fixlinks.py \
+		-f markdown-implicit_figures \
+		-V linkcolor:blue \
+		-o xsdk-installation-policies.pdf
