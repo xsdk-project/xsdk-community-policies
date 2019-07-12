@@ -1,3 +1,3 @@
 
 all:
-	pandoc *.md -o xsdk-community-policies.pdf
+	pandoc -F fixlinks.py *.md -o xsdk-community-policies.pdf
