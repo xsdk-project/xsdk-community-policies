@@ -77,7 +77,7 @@ xSDK may expand to incorporate additional packages, depending on community needs
 
 **M2.** [Provide a comprehensive test suite for correctness of installation verification.](/package_policies/M2.md)
 
-**M3.** [Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 2 or MPI 3
+**M3.** [Employ user-provided MPI communicator (no MPI_COMM_WORLD). Don't assume a full MPI 3
 implementation without checking. Provide an option to prevent any changes to MPI error-handling if it is
 changed by default.](/package_policies/M3.md)
 
