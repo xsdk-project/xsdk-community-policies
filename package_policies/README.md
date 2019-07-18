@@ -164,19 +164,19 @@ the scientific computing community for insightful discussion about issues and
 approaches.
 
 + Changes in version 0.5.0, June 27, 2019:
-  + Added new policy R7, which recommends the inclusion of various information 
+    * Added new policy R7, which recommends the inclusion of various information 
 files in the top directory
-  + Dropped the requirement to detect MPI 2 features in M3 Made various
-  + Editorial changes in M5, M13, M15, and R2 for clarification or 
+    * Dropped the requirement to detect MPI 2 features in M3 Made various
+    * Editorial changes in M5, M13, M15, and R2 for clarification or 
 to fix typos
 + Changes in version 0.4.0, July 27, 2018:
-  + Split policy M4 into 2 parts: M4 (portability to common platforms) and new 
+    * Split policy M4 into 2 parts: M4 (portability to common platforms) and new 
 policy R6 (package should document the versions of packages with which it can
 work on on which it depends). See
 https://github.com/xsdk-project/xsdk-issues/issues/55
-  + Revision to M7: language about open source licensing requirements. See
+    * Revision to M7: language about open source licensing requirements. See
 https://github.com/xsdk-project/xsdk-issues/issues/56
-  + New section on history of policies and summary of changes, misc minor edits
+    * New section on history of policies and summary of changes, misc minor edits
 + Changes in version 0.3.0, November 6, 2017: added 2 new policies (M15 and M16),
 changed naming convention to follow xSDK release number, minor typo edits
 + Changes in version 0.3, December 2, 2016: clear definition of xSDK member packages, misc minor edits
