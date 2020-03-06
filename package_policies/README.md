@@ -73,7 +73,7 @@ xSDK may expand to incorporate additional packages, depending on community needs
 
 ## xSDK Mandatory Policies
 
-**M1.** [Support installation through Spack.](/package_policies/M1.md)
+**M1.** [Support portable installation through Spack.](/package_policies/M1.md)
 
 **M2.** [Provide a comprehensive test suite for correctness of installation verification.](/package_policies/M2.md)
 
