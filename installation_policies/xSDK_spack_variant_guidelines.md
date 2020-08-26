@@ -1,6 +1,6 @@
 # xSDK Spack Variant Guidelines
 
-_**Document initiated on 08/25/2020 by [S. Hudson](https://github.com/shuds13)**_
+_**Document initiated on 08/25/2020 based on [installation policy discussions](https://github.com/xsdk-project/xsdk-community-policies/pull/20)**_
 
 Common Spack [variants](https://spack.readthedocs.io/en/latest/packaging_guide.html#variants) help package authors to build a consistent and compatible software stack, and offers the potential to support global or xsdk-scoped variants and automation.
 
