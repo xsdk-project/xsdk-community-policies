@@ -1,18 +1,18 @@
 # xSDK Spack Variant Guidelines
 
-Common Spack [variants](https://spack.readthedocs.io/en/latest/basic_usage.html#variants) help users to build a consistent and compatible software stack, and offers the potential to support global or xsdk-scoped variants and automation.
+Common Spack [variants](https://spack.readthedocs.io/en/latest/packaging_guide.html#variants) help package authors to build a consistent and compatible software stack, and offers the potential to support global or xsdk-scoped variants and automation.
 
 For example, if a user wished to build the software stack in "debug" mode, potentially a global Spack variant could be applied.
 
 This document outlines a list of features that must be exposed as Spack variants, when alternative options  for these features are available. If the package does not have options for these features, then a Spack variant is not required.
 
-The exact variants names and types (e.g. boolean or multi-value) used are currently given as recommendations. If the recommended variants are inadequate to express a packages options,  then this feedback should be provided to the xSDK team so that these guidelines can be improved.
+The exact variant names and types (e.g. boolean or multi-value) used are currently given as recommendations. If the recommended variants are inadequate to express a packages options,  then this feedback should be provided to the xSDK team so that these guidelines can be improved.
 
 This document may be updated over time, and so should be checked before each xSDK release.
 
 The proposed recommendations for Spack variants given below are based on a review first carried out on August 18th 2020 The reviewing of Spack variants is open-ended. It is documented in the following location: https://github.com/xsdk-project/xsdk-community-policies/wiki/Spack-variant-review.
 
-The following options MUST be exposed through Spack, where alternative options for the given feature are supported in the configuration stage.
+The following options must be exposed through Spack, where relevant.
 
 ---
 
@@ -47,17 +47,17 @@ There has been discussion about adopting a multi-value variant for this purpose,
 
 We recommend using one or more of following boolean variants which have been adopted widely in Spack:
 
-`shared`: A boolean variant. If True, then shared libraries will be built.
-`static`: A boolean variant. If True, then static libraries will be built.
-`pic`: A boolean variant. If True, then produce position independent code.
+- `shared`: A boolean variant. If True, then shared libraries will be built.
+- `static`: A boolean variant. If True, then static libraries will be built.
+- `pic`: A boolean variant. If True, then produce position independent code.
 
 The meaning and combination of these values is expected to follow conventions given below (based on cmake):
 
 If `shared` is the only option present, then enabling this option is expected to build shared libraries *instead* of static, and these will be built using _pic_ (position independent code). If False, then static libraries will be built without pic.
 
-If the user wishes to build both static and shared libraries, then use both `static` and `shared` variants and set both to True.
+If the package author wishes to provide an option to build both static and shared libraries, then use both `static` and `shared` variants, and set both to True.
 
-If the user wishes to build shared libraries but without _pic_, then use `shared` and `pic`, and set `pic` to False.
+To build shared libraries but without _pic_, then use `shared` and `pic`, and set `pic` to False.
 
 Permutations of package variants that are unsupported or infeasible should be denoted in a `conflict` statement. E.g. `conflicts('~static~shared')`
 
@@ -65,7 +65,7 @@ Permutations of package variants that are unsupported or infeasible should be de
 
 **4. Debug/build_type**
 
-These options specify flags to do with debugging symbols and optimization.
+This option configures debugging symbols and optimization.
 
 We recommend using the multi-valued variant `build_type`
 
@@ -76,6 +76,7 @@ We recommend using the multi-valued variant `build_type`
 - `RelWithDebInfo` Contains debugging symbols without disabling optimization
 - `MinSizeRel` Configures optimization for a smaller size release.
 
+Package authors may add further `build_type` values, if the above are inadequate.
+
 The `multi` argument to the `variant` function (used to declare variants) should be set to False. This means only one option can be enabled.
 
-User's may add further options, if the above are inadequate.
