@@ -1,12 +1,14 @@
 # xSDK Spack Variant Guidelines
 
+_**Document initiated on 08/25/2020 by [S. Hudson](https://github.com/shuds13)**_
+
 Common Spack [variants](https://spack.readthedocs.io/en/latest/packaging_guide.html#variants) help package authors to build a consistent and compatible software stack, and offers the potential to support global or xsdk-scoped variants and automation.
 
 For example, if a user wished to build the software stack in "debug" mode, potentially a global Spack variant could be applied.
 
 This document outlines a list of features that must be exposed as Spack variants, when alternative options  for these features are available. If the package does not have options for these features, then a Spack variant is not required.
 
-The exact variant names and types (e.g. boolean or multi-value) used are currently given as recommendations. If the recommended variants are inadequate to express a packages options,  then this feedback should be provided to the xSDK team so that these guidelines can be improved.
+The exact variant names and types (e.g. boolean or multi-value) used are currently given as recommendations. If the recommended variants are inadequate to express a packages options, then this feedback should be provided to the xSDK team so that these guidelines can be improved.
 
 This document may be updated over time, and so should be checked before each xSDK release.
 
@@ -51,7 +53,7 @@ We recommend using one or more of following boolean variants which have been ado
 - `static`: A boolean variant. If True, then static libraries will be built.
 - `pic`: A boolean variant. If True, then produce position independent code.
 
-The meaning and combination of these values is expected to follow conventions given below (based on cmake):
+The meaning and combination of these values is expected to follow conventions given below (based on CMake):
 
 If `shared` is the only option present, then enabling this option is expected to build shared libraries *instead* of static, and these will be built using _pic_ (position independent code). If False, then static libraries will be built without pic.
 
@@ -69,7 +71,7 @@ This option configures debugging symbols and optimization.
 
 We recommend using the multi-valued variant `build_type`
 
-`build_type`: A multi-value variant which must include at least `Debug` and `Release` options. Other options, mirroring their Cmake counterparts, may include `RelWithDebInfo` and and `MinSizeRel`. A brief description of these options is given below.
+`build_type`: A multi-value variant which must include at least `Debug` and `Release` options. Other options, mirroring their CMake counterparts, may include `RelWithDebInfo` and and `MinSizeRel`. A brief description of these options is given below.
 
 - `Release`: Fully optimized version for code release.
 - `Debug`: Debugging symbols should be produced and optimization disabled. Further useful debugging information and additional error checking maybe included.
