@@ -2,11 +2,15 @@
 
 _**Document initiated on 08/25/2020 based on [installation policy discussions](https://github.com/xsdk-project/xsdk-community-policies/pull/20)**_
 
-Common Spack [variants](https://spack.readthedocs.io/en/latest/packaging_guide.html#variants) help package authors to build a consistent and compatible software stack, and offers the potential to support global or xsdk-scoped variants and automation.
+## Motivation
 
-For example, if a user wished to build the software stack in "debug" mode, potentially a global Spack variant could be applied.
+Common Spack [variants](https://spack.readthedocs.io/en/latest/packaging_guide.html#variants) help package authors to build a consistent and compatible software stack, and offers the potential to support automatic variant propagation. These future features may include forwarding variants supplied to the xSDK metapackage, and possibly specification of globally-scoped or xSDK-scoped variants supplied on the installation line.
 
-This document outlines a list of features that must be exposed as Spack variants, when alternative options  for these features are available. If the package does not have options for these features, then a Spack variant is not required.
+For example, variant-forwarding would mean that if a user wished to build the xsdk in _**debug**_ mode, a variant passed to the `xsdk` metapackage could be forwarded to all xSDK packages using `spack install xsdk build_type=debug`
+
+## Package author requirements
+
+This document outlines a list of features that must be exposed as Spack variants, when alternative options for these features are available. If the package does not have options for these features, then a Spack variant is not required.
 
 The exact variant names and types (e.g. boolean or multi-value) used are currently given as recommendations. If the recommended variants are inadequate to express a packages options, then this feedback should be provided to the xSDK team so that these guidelines can be improved.
 
@@ -14,9 +18,10 @@ This document may be updated over time, and so should be checked before each xSD
 
 The proposed recommendations for Spack variants given below are based on a review first carried out on August 18th 2020 The reviewing of Spack variants is open-ended. It is documented in the following location: https://github.com/xsdk-project/xsdk-community-policies/wiki/Spack-variant-review.
 
-The following options must be exposed through Spack, where relevant.
+## List of recommended variants
 
----
+The following options must be expressed through Spack variants, where relevant.
+
 
 **1. Index size**
 
@@ -71,7 +76,7 @@ This option configures debugging symbols and optimization.
 
 We recommend using the multi-valued variant `build_type`.
 
-Note that packages that use the `CMakePackage` class already have this variant set with the default value `RelWithDebInfo` as described in the [Spack CMakePackage documentation](https://spack.readthedocs.io/en/latest/build_systems/cmakepackage.html#cmake-build-type). User's may set the variant in **package.py** to override the default.
+Note that packages that use the `CMakePackage` class already have this variant set with the default value `RelWithDebInfo` as described in the [Spack CMakePackage documentation](https://spack.readthedocs.io/en/latest/build_systems/cmakepackage.html#cmake-build-type). Package author's may rely on this default if all of the value options are supported. Alternatively the `build_type` variant may be defined in **package.py** to override the default.
 
 `build_type`: A multi-value variant which must include at least `Debug` and `Release` options. Other options, mirroring their CMake counterparts, may include `RelWithDebInfo` (highly recommended) and `MinSizeRel`. A brief description of these options is given below.
 
