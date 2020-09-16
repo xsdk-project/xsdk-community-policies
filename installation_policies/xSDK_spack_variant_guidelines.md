@@ -69,9 +69,11 @@ Permutations of package variants that are unsupported or infeasible should be de
 
 This option configures debugging symbols and optimization.
 
-We recommend using the multi-valued variant `build_type`
+We recommend using the multi-valued variant `build_type`.
 
-`build_type`: A multi-value variant which must include at least `Debug` and `Release` options. Other options, mirroring their CMake counterparts, may include `RelWithDebInfo` and and `MinSizeRel`. A brief description of these options is given below.
+Note that packages that use the `CMakePackage` class already have this variant set with the default value `RelWithDebInfo` as described in the [Spack CMakePackage documentation](https://spack.readthedocs.io/en/latest/build_systems/cmakepackage.html#cmake-build-type). User's may set the variant in **package.py** to override the default.
+
+`build_type`: A multi-value variant which must include at least `Debug` and `Release` options. Other options, mirroring their CMake counterparts, may include `RelWithDebInfo` (highly recommended) and `MinSizeRel`. A brief description of these options is given below.
 
 - `Release`: Fully optimized version for code release.
 - `Debug`: Debugging symbols should be produced and optimization disabled. Further useful debugging information and additional error checking maybe included.
@@ -79,6 +81,3 @@ We recommend using the multi-valued variant `build_type`
 - `MinSizeRel` Configures optimization for a smaller size release.
 
 Package authors may add further `build_type` values, if the above are inadequate.
-
-The `multi` argument to the `variant` function (used to declare variants) should be set to False. This means only one option can be enabled.
-
