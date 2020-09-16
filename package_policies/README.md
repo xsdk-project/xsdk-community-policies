@@ -106,9 +106,7 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 **M15.** [All xSDK compatibility changes should be sustainable.](/package_policies/M15.md)
 
-**M16.** [Be compatible with 32-bit integers.](/package_policies/M16.md)
-
-**M17.** [Have a debug build option.](/package_policies/M16.md)
+**M16.** [Have a debug build option.](/package_policies/M16.md)
 
 ## xSDK Recommended Policies
 
