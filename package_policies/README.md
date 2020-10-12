@@ -138,6 +138,13 @@ with the broader computational science community and developers of an expanding 
 packages. We thank all xSDK package developers, the IDEAS team, and the scientific computing community for
 insightful discussion about issues and approaches.
 
++ Changes in version 0.6.0, October 12, 2020:
+  + Added new policy R8 on documentation quality
+  + Merged policies M1 and M16 with emphasis on use of Spack as xSDK installer 
+  + Eliminated installation policies which were included in previous M1
+  + Provided a document with xSDK Spack variant guidelines
+  + Added new policy M16, which requires an xSDK package to have a configuration option that allows building in debug mode, 
+a requirement previously included in the eliminated installation policies
 + Changes in version 0.5.0, June 27, 2019:
   + Added new policy R7, which recommends the inclusion of various information files in the top directory
   + Dropped the requirement to detect MPI 2 features in M3
