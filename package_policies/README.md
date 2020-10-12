@@ -75,7 +75,7 @@ xSDK may expand to incorporate additional packages, depending on community needs
 
 ## xSDK Mandatory Policies
 
-**M1.** [Support xSDK community GNU Autoconf or CMake options.](/package_policies/M1.md)
+**M1.** [Support portable installation through Spack.](/package_policies/M1.md)
 
 **M2.** [Provide a comprehensive test suite for correctness of installation verification.](/package_policies/M2.md)
 
@@ -108,8 +108,7 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 **M15.** [All xSDK compatibility changes should be sustainable.](/package_policies/M15.md)
 
-**M16.** [The package must support production-quality installation compatible with the xSDK install tool
-and xSDK metapackage.](/package_policies/M16.md)
+**M16.** [Have a debug build option.](/package_policies/M16.md)
 
 ## xSDK Recommended Policies
 
