@@ -12,8 +12,8 @@ Version 0.6.0, October 12, 2020
 
 ## Background
 
-A key aspect of work in the [IDEAS Scientific Software Productivity Project][1] is developing an Extreme-scale
-Scientific Software Development Kit ([xSDK][2]) — a collection of related and complementary software elements
+A key aspect of work started in the [IDEAS Scientific Software Productivity Project][1] and continued in the [xSDK4ECP Project][2] is developing an Extreme-scale
+Scientific Software Development Kit ([xSDK][3]) — a collection of related and complementary software elements
 that provide the building blocks, tools, models, processes, and related artifacts for rapid and efficient
 development of high-quality applications. As an initial step in creating xSDK, we have written the
 following draft xSDK package community policies to help address challenges in interoperability and
@@ -43,32 +43,32 @@ interface is regularly tested for regressions.
 Initially the requirements and process are informally presented; over time, if needed, we can begin to
 formalize them. Currently, xSDK includes twenty-one popular numerical libraries:
 
-1. [AMReX][13]
-2. [ButterflyPACK][23]
-3. [DTK][14]
-4. [deal.II][15]
-5. [Ginkgo][24]
-6. [hypre][3]
-7. [libEnsemble][25]
-8. [MAGMA][4]
-9. [MFEM][5]
-10. [Omega_h][16]
-11. [PETSc/TAO][6]
-12. [PHIST][17]
-13. [preCICE][26]
-14. [PLASMA][18]
-15. [PUMI][19]
-16. [SLEPc][20]
-17. [STRUMPACK][21]
-18. [SUNDIALS][7]
-19. [SuperLU][8]
-20. [Tasmanian][22]
-21. [Trilinos][9]
+1. [AMReX][14]
+2. [ButterflyPACK][24]
+3. [DTK][15]
+4. [deal.II][16]
+5. [Ginkgo][25]
+6. [hypre][4]
+7. [libEnsemble][26]
+8. [MAGMA][5]
+9. [MFEM][6]
+10. [Omega_h][17]
+11. [PETSc/TAO][7]
+12. [PHIST][18]
+13. [preCICE][27]
+14. [PLASMA][19]
+15. [PUMI][20]
+16. [SLEPc][21]
+17. [STRUMPACK][22]
+18. [SUNDIALS][8]
+19. [SuperLU][9]
+20. [Tasmanian][23]
+21. [Trilinos][10]
 
 and two applications packages:
 
 1. [Alquimia][10]
-2. [PFLOTRAN][11],
+2. [PFLOTRAN][12],
 
 which satisfy the required policies. Over the longer term,
 xSDK may expand to incorporate additional packages, depending on community needs and contributions.
@@ -190,28 +190,29 @@ http://trac.trilinos.org/wiki/TribitsLifecycleModelOverview#self_sustaining_soft
 [//]: # "Links go here"
 
 [1]: http://www.ideas-productivity.org/
-[2]: http://xsdk.info/
-[3]: https://computation.llnl.gov/project/linear_solvers/
-[4]: http://icl.utk.edu/magma
-[5]: http://mfem.org/
-[6]: http://www.mcs.anl.gov/petsc/
-[7]: https://computation.llnl.gov/projects/sundials
-[8]: http://crd-legacy.lbl.gov/~xiaoye/SuperLU/
-[9]: https://trilinos.org/
-[10]: https://bitbucket.org/berkeleylab/alquimia
-[11]: http://www.pflotran.org/
-[12]: http://xsdk.info/faq/
-[13]: https://amrex-codes.github.io/amrex/
-[14]: https://github.com/ORNL-CEES/DataTransferKit
-[15]: http://www.dealii.org/
-[16]: https://github.com/ibaned/omega_h
-[17]: https://bitbucket.org/essex/phist
-[18]: http://icl.utk.edu/plasma/
-[19]: https://github.com/SCOREC/core
-[20]: http://slepc.upv.es/
-[21]: https://portal.nersc.gov/project/sparse/strumpack/
-[22]: https://tasmanian.ornl.gov/
-[23]: https://github.com/liuyangzhuan/ButterflyPACK
-[24]: https://github.com/ginkgo-project/ginkgo
-[25]: https://github.com/Libensemble/libensemble
-[26]: https://www.precice.org/
+[2]: http://xsdk.info/ecp/
+[3]: http://xsdk.info/
+[4]: https://computation.llnl.gov/project/linear_solvers/
+[5]: http://icl.utk.edu/magma
+[6]: http://mfem.org/
+[7]: http://www.mcs.anl.gov/petsc/
+[8]: https://computation.llnl.gov/projects/sundials
+[9]: http://crd-legacy.lbl.gov/~xiaoye/SuperLU/
+[10]: https://trilinos.org/
+[11]: https://bitbucket.org/berkeleylab/alquimia
+[12]: http://www.pflotran.org/
+[13]: http://xsdk.info/faq/
+[14]: https://amrex-codes.github.io/amrex/
+[15]: https://github.com/ORNL-CEES/DataTransferKit
+[16]: http://www.dealii.org/
+[17]: https://github.com/ibaned/omega_h
+[18]: https://bitbucket.org/essex/phist
+[19]: http://icl.utk.edu/plasma/
+[20]: https://github.com/SCOREC/core
+[21]: http://slepc.upv.es/
+[22]: https://portal.nersc.gov/project/sparse/strumpack/
+[23]: https://tasmanian.ornl.gov/
+[24]: https://github.com/liuyangzhuan/ButterflyPACK
+[25]: https://github.com/ginkgo-project/ginkgo
+[26]: https://github.com/Libensemble/libensemble
+[27]: https://www.precice.org/
