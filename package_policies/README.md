@@ -41,29 +41,31 @@ package, *and* (2) it uses or can be used by another package in xSDK, and the co
 interface is regularly tested for regressions.
 
 Initially the requirements and process are informally presented; over time, if needed, we can begin to
-formalize them. Currently, xSDK includes twenty-one popular numerical libraries:
+formalize them. Currently, xSDK includes twenty-three popular numerical libraries:
 
 1. [AMReX][14]
 2. [ButterflyPACK][24]
 3. [DTK][15]
 4. [deal.II][16]
 5. [Ginkgo][25]
-6. [hypre][4]
-7. [libEnsemble][26]
-8. [MAGMA][5]
-9. [MFEM][6]
-10. [Omega_h][17]
-11. [PETSc/TAO][7]
-12. [PHIST][18]
-13. [preCICE][27]
-14. [PLASMA][19]
-15. [PUMI][20]
-16. [SLEPc][21]
-17. [STRUMPACK][22]
-18. [SUNDIALS][8]
-19. [SuperLU][9]
-20. [Tasmanian][23]
-21. [Trilinos][10]
+6. [heFFTe][28]
+7. [hypre][4]
+8. [libEnsemble][26]
+9. [MAGMA][5]
+10. [MFEM][6]
+11. [Omega_h][17]
+12. [PETSc/TAO][7]
+13. [PHIST][18]
+14. [preCICE][27]
+15. [PLASMA][19]
+16. [PUMI][20]
+17. [SLATE][29]
+18. [SLEPc][21]
+19. [STRUMPACK][22]
+20. [SUNDIALS][8]
+21. [SuperLU][9]
+22. [Tasmanian][23]
+23. [Trilinos][10]
 
 and two applications packages:
 
@@ -216,3 +218,5 @@ http://trac.trilinos.org/wiki/TribitsLifecycleModelOverview#self_sustaining_soft
 [25]: https://github.com/ginkgo-project/ginkgo
 [26]: https://github.com/Libensemble/libensemble
 [27]: https://www.precice.org/
+[28]: https://bitbucket.org/icl/heffte/src/master/
+[29]: https://bitbucket.org/icl/slate/src/master/
