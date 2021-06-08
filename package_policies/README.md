@@ -167,7 +167,7 @@ minor edits
 
 ## Frequently Asked Questions about xSDK
 
-See the [xSDK FAQ list][12].
+See the [xSDK FAQ list][13].
 
 ## Acknowledgment
 
