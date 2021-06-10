@@ -102,7 +102,7 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 **M11.** [Have no hardwired print or IO statements that cannot be turned off.](/package_policies/M11.md)
 
-**M12.** [For external dependencies, allow installing, building, and linking against an outside copy of external software.](/package_policies/M12.md)
+**M12.** [For external dependencies, allow installing, building, and linking with an outside copy of external software.](/package_policies/M12.md)
 
 **M13.** [Install headers and libraries under `<prefix>/include` and `<prefix>/lib`.](/package_policies/M13.md)
   
