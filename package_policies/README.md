@@ -198,7 +198,7 @@ http://trac.trilinos.org/wiki/TribitsLifecycleModelOverview#self_sustaining_soft
 [5]: http://icl.utk.edu/magma
 [6]: http://mfem.org/
 [7]: http://www.mcs.anl.gov/petsc/
-[8]: https://computation.llnl.gov/projects/sundials
+[8]: https://computing.llnl.gov/projects/sundials
 [9]: http://crd-legacy.lbl.gov/~xiaoye/SuperLU/
 [10]: https://trilinos.org/
 [11]: https://bitbucket.org/berkeleylab/alquimia
