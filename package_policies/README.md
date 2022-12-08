@@ -194,7 +194,7 @@ http://trac.trilinos.org/wiki/TribitsLifecycleModelOverview#self_sustaining_soft
 [1]: http://www.ideas-productivity.org/
 [2]: http://xsdk.info/ecp/
 [3]: http://xsdk.info/
-[4]: https://computing.llnl.gov/project/hypre/
+[4]: https://computing.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods
 [5]: http://icl.utk.edu/magma
 [6]: http://mfem.org/
 [7]: http://www.mcs.anl.gov/petsc/
