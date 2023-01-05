@@ -132,6 +132,8 @@ In addition to the required xSDK policies listed above, the following capabiliti
 
 **R8.** [Provide sufficient documentation to support use and further development.](/package_policies/R8.md)
 
+**R9.** [At least one validation (smoke) test that can be invoked through the Spack package.](/package_policies/R9.md)
+
 ## History of the xSDK Community Policies
 
 The original version of this document was prepared in 2015 by Barry Smith with key input from Roscoe Bartlett
