@@ -112,6 +112,8 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 **M16.** [Have a debug build option.](/package_policies/M16.md)
 
+**M17.** [Provide sufficient documentation to support use and further development.](/package_policies/M17.md)
+
 ## xSDK Recommended Policies
 
 In addition to the required xSDK policies listed above, the following capabilities are also recommended.
@@ -129,8 +131,6 @@ In addition to the required xSDK policies listed above, the following capabiliti
 **R6.** [Document versions of packages that it works with or depends upon, preferably in machine-readable form.](/package_policies/R6.md)
 
 **R7.** [Have README, SUPPORT, LICENSE, and CHANGELOG files in top directory.](/package_policies/R7.md)
-
-**R8.** [Provide sufficient documentation to support use and further development.](/package_policies/R8.md)
 
 ## History of the xSDK Community Policies
 
