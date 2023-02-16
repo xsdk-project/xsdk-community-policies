@@ -98,7 +98,7 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 **M9.** [Use a limited and well-defined symbol, macro, library, and include file name space.](/package_policies/M9.md)
 
-**M10.** [Provide an xSDK team accessible repository (not necessarily publicly available).](/package_policies/M10.md)
+**M10.** [Provide a publicly available repository.](/package_policies/M10.md)
 
 **M11.** [Have no hardwired print or IO statements that cannot be turned off.](/package_policies/M11.md)
 
@@ -117,8 +117,6 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 ## xSDK Recommended Policies
 
 In addition to the required xSDK policies listed above, the following capabilities are also recommended.
-
-**R1.** [Have a public repository](/package_policies/R1.md).
 
 **R2.** [Possible to run test suite under valgrind in order to test for memory corruption issues.](/package_policies/R2.md)
 
