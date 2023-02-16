@@ -132,7 +132,7 @@ In addition to the required xSDK policies listed above, the following capabiliti
 
 **R8.** [Provide version comparision preprocessor macros.](/package_policies/R8.md)
 
-**R9.** [At least one validation (smoke) test that can be invoked through the Spack package.](/package_policies/R9.md)
+**R1.** [At least one validation (smoke) test that can be invoked through the Spack package.](/package_policies/R1.md)
 
 ## History of the xSDK Community Policies
 
