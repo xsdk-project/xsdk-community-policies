@@ -118,6 +118,8 @@ vendor compilers, and target machines at ALCF, NERSC, OLCF).](/package_policies/
 
 In addition to the required xSDK policies listed above, the following capabilities are also recommended.
 
+**R1.** [At least one validation (smoke) test that can be invoked through the Spack package.](/package_policies/R1.md)
+
 **R2.** [Possible to run test suite under Valgrind in order to test for memory corruption issues.](/package_policies/R2.md)
 
 **R3.** [Adopt and document consistent system for error conditions/exceptions.](/package_policies/R3.md)
@@ -131,8 +133,6 @@ In addition to the required xSDK policies listed above, the following capabiliti
 **R7.** [Have README, SUPPORT, LICENSE, and CHANGELOG files in top directory.](/package_policies/R7.md)
 
 **R8.** [Provide version comparision preprocessor macros.](/package_policies/R8.md)
-
-**R1.** [At least one validation (smoke) test that can be invoked through the Spack package.](/package_policies/R1.md)
 
 ## History of the xSDK Community Policies
 
