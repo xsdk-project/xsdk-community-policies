@@ -140,6 +140,15 @@ with the broader computational science community and developers of an expanding 
 packages. We thank all xSDK package developers, the IDEAS team, and the scientific computing community for
 insightful discussion about issues and approaches.
 
++ Changes in version 1.0.0, February 17, 2023:
+  + Made R1 (must have a public repository) mandatory, merging it into M10
+  + Converted R8 (documentation) to a new mandatory policy (M17)
+  + Added new recommended policy requiring a validation test, replacing R1
+  + Added new recommended policy (provide version comparison preprocessor macros), replacing R8
+  + Added wording to M13, clarifying the requirement and providing motivation for the policy
+  + Added clarification to R5, giving rationale for the policy and an example of how to meet the requirement
+  + Minor wording/grammar changes were made to M7 and R2, without changing meaning
+
 + Changes in version 0.6.0, October 12, 2020:
   + Added new policy R8 on documentation quality
   + Merged policies M1 and M16 with emphasis on use of Spack as xSDK installer 
