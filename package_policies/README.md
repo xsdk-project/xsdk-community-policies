@@ -41,31 +41,34 @@ package, *and* (2) it uses or can be used by another package in xSDK, and the co
 interface is regularly tested for regressions.
 
 Initially the requirements and process are informally presented; over time, if needed, we can begin to
-formalize them. Currently, xSDK includes twenty-three popular numerical libraries:
+formalize them. Currently, xSDK includes twenty-six popular numerical libraries:
 
 1. [AMReX][14]
-2. [ButterflyPACK][24]
-3. [DTK][15]
-4. [deal.II][16]
-5. [Ginkgo][25]
-6. [heFFTe][28]
-7. [hypre][4]
-8. [libEnsemble][26]
-9. [MAGMA][5]
-10. [MFEM][6]
-11. [Omega_h][17]
-12. [PETSc/TAO][7]
-13. [PHIST][18]
-14. [preCICE][27]
-15. [PLASMA][19]
-16. [PUMI][20]
-17. [SLATE][29]
-18. [SLEPc][21]
-19. [STRUMPACK][22]
-20. [SUNDIALS][8]
-21. [SuperLU][9]
-22. [Tasmanian][23]
-23. [Trilinos][10]
+2. [ArborX][30]
+3. [ButterflyPACK][24]
+4. [DTK][15]
+5. [deal.II][16]
+6. [ExaGO][31]
+7. [Ginkgo][25]
+8. [heFFTe][28]
+9. [HiOp][32]
+10. [hypre][4]
+11. [libEnsemble][26]
+12. [MAGMA][5]
+13. [MFEM][6]
+14. [Omega_h][17]
+15. [PETSc/TAO][7]
+16. [PHIST][18]
+17. [preCICE][27]
+18. [PLASMA][19]
+19. [PUMI][20]
+20. [SLATE][29]
+21. [SLEPc][21]
+22. [STRUMPACK][22]
+23. [SUNDIALS][8]
+24. [SuperLU][9]
+25. [Tasmanian][23]
+26. [Trilinos][10]
 
 and two applications packages:
 
@@ -231,3 +234,6 @@ http://trac.trilinos.org/wiki/TribitsLifecycleModelOverview#self_sustaining_soft
 [27]: https://www.precice.org/
 [28]: https://bitbucket.org/icl/heffte/src/master/
 [29]: https://bitbucket.org/icl/slate/src/master/
+[30]: https://github.com/arborx/arborx
+[31]: https://gitlab.pnnl.gov/exasgd/frameworks/exago
+[32]: https://github.com/LLNL/hiop
