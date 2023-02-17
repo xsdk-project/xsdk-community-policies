@@ -6,7 +6,7 @@ We are actively soliciting suggestions from the community at https://xsdk.info/p
 
 The IDEAS Project xSDK Team
 
-Version 0.6.0, October 12, 2020
+Version 1.0.0, February 17, 2023
 
 [https://xsdk.info/policies](https://xsdk.info/policies)
 
